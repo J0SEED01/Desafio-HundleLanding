@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('/images/bg-desktop.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header img, .main{
+    padding-left: 40px;
+}
+
+.espacio{
+    display: block;
+}
+
+.header img{
+    padding-top: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+.main{
+    display: flex;
+    padding-top: 40px;
+}
+
+
+.main__info{
+    color: white;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.info__header{
+    font-weight: 700;
+}
+
+.info__buton{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    -webkit-box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.75);
+  
+}
+
+.footer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+  
+.footer__logo{
+    margin-right: 15px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.icono{
+    font-size: 25px;
+    margin-left: 3px;
+}
+
+.footer__logo:nth-child(1){
+    order: 5
+}
+
+.footer__logo:nth-child(2){
+    order: 2
+}
+
+@media only screen and (max-width: 980px) {
+
+    body{
+        background-image: none;
+        background-image: url('/images/bg-mobile.svg');
+        background-position: top right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .header img{
+        padding-left: 0;
+        margin-bottom: 50px;
+
+    }
+
+    .main{
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__img{
+        text-align: center;
+    }
+
+    .main__img img{
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__info{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .info__buton{
+        margin-top: 40px;
+        width: 300px;
+    }
+
+    .footer{
+        justify-content: center;
+        margin-left: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    .footer__logo{
+        margin-top: 75px;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px){
+      .header img{
+          max-width: 40%;
+      }
+  }
